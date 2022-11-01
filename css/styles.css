@@ -1,4 +1,4 @@
-:root{
+:root{--black-color:#000000;
    --primary-text-color:#212121;
    --secondary-text-color:#757575;
    --accent-color:#2196F3;
@@ -60,7 +60,7 @@ color: var(--primary-text-color);
        }
 
  .logo.first {
-      color: #000000;
+      color: var(--black-color);
       font-family: Raleway,sans-serif;
       font-weight: 700;
       font-size: 26px;
@@ -333,16 +333,16 @@ background-color: var(--footer-background-color);
 .we-do.section{
    padding-top: 0;
 }
-img {
+.we-do__img{
    display: block;
    max-width: 100%;
    height: auto;
 }
-.img{
+.we-do__list{
    position: relative;
    display: flex;
 }
-.text-bord{
+.we-do__text-bord{
    position: absolute;
    display: flex;
    justify-content: center;
@@ -363,7 +363,7 @@ img {
    color:var(--primary-white-color); 
 }
 
-.we-do .img:not(:last-child){
+.we-do__list:not(:last-child){
  margin-right: 30px;
 }
 
