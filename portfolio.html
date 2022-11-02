@@ -18,37 +18,47 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header class="header">
+    <header class="page-header">
       <div class="container">
         <div>
-          <a lang="en" href="./index.html" class="logo first"
+          <a lang="en" href="./index.html" class="logo logo--black"
             ><span class="logo">Web</span>Studio</a
           >
         </div>
         <nav>
           <ul class="site-nav list">
-            <li class="item">
-              <a href="./index.html" class="link">Студіо</a>
+            <li class="site-nav__item">
+              <a href="./index.html" class="site-nav__link">Студіо</a>
             </li>
-            <li class="item">
-              <a href="./portfolio.html" class="link current">Портфоліо</a>
+            <li class="site-nav__item">
+              <a
+                href="./portfolio.html"
+                class="site-nav__link site-nav__link--current"
+                >Портфоліо</a
+              >
             </li>
-            <li class="item"><a href="#" class="link">Контакти</a></li>
+            <li class="site-nav__item">
+              <a href="#" class="site-nav__link">Контакти</a>
+            </li>
           </ul>
         </nav>
         <ul class="contacts list">
-          <li class="item">
+          <li class="contacts__item">
             <div>
-              <a lang="en" href="mailto:info@devstudio.com" class="link">
-                <svg class="icon-mail">
+              <a
+                lang="en"
+                href="mailto:info@devstudio.com"
+                class="contacts__link"
+              >
+                <svg class="contacts__icon-mail icon-cont">
                   <use href="./images/icons.svg#icon-mail"></use></svg
                 >info@devstudio.com</a
               >
             </div>
           </li>
-          <li class="item">
+          <li class="contacts__item">
             <a href="tel:+380961111111" class="link"
-              ><svg class="icon-smartphone">
+              ><svg class="contacts__icon-smartphone icon-cont">
                 <use href="./images/icons.svg#icon-smartphone"></use></svg
               >+38 096 111 11 11</a
             >
@@ -61,36 +71,41 @@
         <div class="container">
           <h1 class="visually-hidden">Перелік послуг</h1>
           <ul class="buttons list">
-            <li class="item">
-              <button class="button-all pointer" type="button">Усі</button>
+            <li class="buttons__item">
+              <button
+                class="buttons__button buttons__button--all"
+                type="button"
+              >
+                Усі
+              </button>
             </li>
-            <li class="item">
-              <button class="button pointer" type="button">Веб-сайти</button>
+            <li class="buttons__item">
+              <button class="buttons__button" type="button">Веб-сайти</button>
             </li>
-            <li class="item">
-              <button class="button pointer" type="button">Додатки</button>
+            <li class="buttons__item">
+              <button class="buttons__button" type="button">Додатки</button>
             </li>
-            <li class="item">
-              <button class="button pointer" type="button">Дизайн</button>
+            <li class="buttons__item">
+              <button class="buttons__button" type="button">Дизайн</button>
             </li>
-            <li class="item">
-              <button class="button pointer" type="button">Маркетинг</button>
+            <li class="buttons__item">
+              <button class="buttons__button" type="button">Маркетинг</button>
             </li>
           </ul>
 
-          <ul class="service-list list">
-            <li class="service-item">
-              <div class="cart">
-                <a class="services" href="#">
-                  <div class="cart-img">
+          <ul class="service-set list">
+            <li class="service-set__item">
+              <div class="card">
+                <a class="card__services" href="#">
+                  <div class="card__img">
                     <img
-                      class="service-photo"
+                      class="card__service-photo"
                       src="./images/staff-cards.jpg"
                       alt="Картки персоналу"
                       width="370"
                     />
-                    <div class="cart-overlay">
-                      <p class="cart-text">
+                    <div class="card__overlay">
+                      <p class="card__text">
                         Ресурс пропонує комплексні пропозиції з різним рівнем
                         функціоналу та сервісів. Все це дозволить відвідувачу
                         отримати вичерпні відомості про компанію чи приватну
@@ -99,27 +114,27 @@
                     </div>
                   </div>
 
-                  <ul class="cart-info list">
+                  <ul class="card__info list">
                     <li class="info">
-                      <h2 class="list-title">Технокряк</h2>
+                      <h2 class="card__title">Технокряк</h2>
                     </li>
-                    <li class="info"><p class="work-types">Веб-сайт</p></li>
+                    <li class="info"><p class="card__works">Веб-сайт</p></li>
                   </ul>
                 </a>
               </div>
             </li>
-            <li class="service-item">
-              <div class="cart">
-                <a class="services" href="#">
-                  <div class="cart-img">
+            <li class="service-set__item">
+              <div class="card">
+                <a class="card__services" href="#">
+                  <div class="card__img">
                     <img
-                      class="service-photo"
+                      class="card__service-photo"
                       src="./images/basketball.jpg"
                       alt="Баскетбол"
                       width="370"
                     />
-                    <div class="cart-overlay">
-                      <p class="cart-text">
+                    <div class="card__overlay">
+                      <p class="card__text">
                         Ресурс пропонує комплексні пропозиції з різним рівнем
                         функціоналу та сервісів. Все це дозволить відвідувачу
                         отримати вичерпні відомості про компанію чи приватну
@@ -128,29 +143,29 @@
                     </div>
                   </div>
 
-                  <ul class="cart-info list">
+                  <ul class="card__info list">
                     <li>
-                      <h2 class="list-title">
+                      <h2 class="card__title">
                         Постер<span lang="en"></span> New Orlean vs Golden Star
                       </h2>
                     </li>
-                    <li><p class="work-types">Дизайн</p></li>
+                    <li><p class="card__works">Дизайн</p></li>
                   </ul>
                 </a>
               </div>
             </li>
-            <li class="service-item">
-              <div class="cart">
-                <a class="services" href="#">
-                  <div class="cart-img">
+            <li class="service-set__item">
+              <div class="card">
+                <a class="card__services" href="#">
+                  <div class="card__img">
                     <img
-                      class="service-photo"
+                      class="card__service-photo"
                       src="./images/seafood.jpg"
                       alt="Риба"
                       width="370"
                     />
-                    <div class="cart-overlay">
-                      <p class="cart-text">
+                    <div class="card__overlay">
+                      <p class="card__text">
                         Ресурс пропонує комплексні пропозиції з різним рівнем
                         функціоналу та сервісів. Все це дозволить відвідувачу
                         отримати вичерпні відомості про компанію чи приватну
@@ -159,31 +174,31 @@
                     </div>
                   </div>
 
-                  <ul class="cart-info list">
+                  <ul class="card__info list">
                     <li>
-                      <h2 class="list-title">
+                      <h2 class="card__title">
                         Ресторан <span lang="en">Seafood</span>
                       </h2>
                     </li>
                     <li>
-                      <p class="work-types">Додаток</p>
+                      <p class="card__works">Додаток</p>
                     </li>
                   </ul>
                 </a>
               </div>
             </li>
-            <li class="service-item">
-              <div class="cart">
-                <a class="services" href="#">
-                  <div class="cart-img">
+            <li class="service-set__item">
+              <div class="card">
+                <a class="card__services" href="#">
+                  <div class="card__img">
                     <img
-                      class="service-photo"
+                      class="card__service-photo"
                       src="./images/headphones.jpg"
                       alt="Навушники"
                       width="370"
                     />
-                    <div class="cart-overlay">
-                      <p class="cart-text">
+                    <div class="card__overlay">
+                      <p class="card__text">
                         Ресурс пропонує комплексні пропозиції з різним рівнем
                         функціоналу та сервісів. Все це дозволить відвідувачу
                         отримати вичерпні відомості про компанію чи приватну
@@ -192,31 +207,31 @@
                     </div>
                   </div>
 
-                  <ul class="cart-info list">
+                  <ul class="card__info list">
                     <li>
-                      <h2 class="list-title">
+                      <h2 class="card__title">
                         Проєкт <span lang="en">Prime</span>
                       </h2>
                     </li>
                     <li>
-                      <p class="work-types">Маркетинг</p>
+                      <p class="card__works">Маркетинг</p>
                     </li>
                   </ul>
                 </a>
               </div>
             </li>
-            <li class="service-item">
-              <div class="cart">
-                <a class="services" href="#">
-                  <div class="cart-img">
+            <li class="service-set__item">
+              <div class="card">
+                <a class="card__services" href="#">
+                  <div class="card__img">
                     <img
-                      class="service-photo"
+                      class="card__service-photo"
                       src="./images/boxes.jpg"
                       alt="Коробки"
                       width="370"
                     />
-                    <div class="cart-overlay">
-                      <p class="cart-text">
+                    <div class="card__overlay">
+                      <p class="card__text">
                         Ресурс пропонує комплексні пропозиції з різним рівнем
                         функціоналу та сервісів. Все це дозволить відвідувачу
                         отримати вичерпні відомості про компанію чи приватну
@@ -225,31 +240,31 @@
                     </div>
                   </div>
 
-                  <ul class="cart-info list">
+                  <ul class="card__info list">
                     <li>
-                      <h2 class="list-title">
+                      <h2 class="card__title">
                         Проєкт <span lang="en">Boxes</span>
                       </h2>
                     </li>
                     <li>
-                      <p class="work-types">Додаток</p>
+                      <p class="card__works">Додаток</p>
                     </li>
                   </ul>
                 </a>
               </div>
             </li>
-            <li class="service-item">
-              <div class="cart">
-                <a class="services" href="#">
-                  <div class="cart-img">
+            <li class="service-set__item">
+              <div class="card">
+                <a class="card__services" href="#">
+                  <div class="card__img">
                     <img
-                      class="service-photo"
+                      class="card__service-photo"
                       src="./images/monitor.jpg"
                       alt="Монитор"
                       width="370"
                     />
-                    <div class="cart-overlay">
-                      <p class="cart-text">
+                    <div class="card__overlay">
+                      <p class="card__text">
                         Ресурс пропонує комплексні пропозиції з різним рівнем
                         функціоналу та сервісів. Все це дозволить відвідувачу
                         отримати вичерпні відомості про компанію чи приватну
@@ -258,31 +273,31 @@
                     </div>
                   </div>
 
-                  <ul class="cart-info list">
+                  <ul class="card__info list">
                     <li>
-                      <h2 class="list-title" lang="en">
+                      <h2 class="card__title" lang="en">
                         Inspiration has no Borders
                       </h2>
                     </li>
                     <li>
-                      <p class="work-types">Веб-сайт</p>
+                      <p class="card__works">Веб-сайт</p>
                     </li>
                   </ul>
                 </a>
               </div>
             </li>
-            <li class="service-item">
-              <div class="cart">
-                <a class="services" href="#">
-                  <div class="cart-img">
+            <li class="service-set__item">
+              <div class="card">
+                <a class="card__services" href="#">
+                  <div class="card__img">
                     <img
-                      class="service-photo"
+                      class="card__service-photo"
                       src="./images/magazine.jpg"
                       alt="Журнал"
                       width="370"
                     />
-                    <div class="cart-overlay">
-                      <p class="cart-text">
+                    <div class="card__overlay">
+                      <p class="card__text">
                         Ресурс пропонує комплексні пропозиції з різним рівнем
                         функціоналу та сервісів. Все це дозволить відвідувачу
                         отримати вичерпні відомості про компанію чи приватну
@@ -291,32 +306,32 @@
                     </div>
                   </div>
 
-                  <ul class="cart-info list">
+                  <ul class="card__info list">
                     <li>
-                      <h2 class="list-title">
+                      <h2 class="card__title">
                         Видання
                         <span lang="en">Limited Edition</span>
                       </h2>
                     </li>
                     <li>
-                      <p class="work-types">Дизайн</p>
+                      <p class="card__works">Дизайн</p>
                     </li>
                   </ul>
                 </a>
               </div>
             </li>
-            <li class="service-item">
-              <div class="cart">
-                <a class="services" href="#">
-                  <div class="cart-img">
+            <li class="service-set__item">
+              <div class="card">
+                <a class="card__services" href="#">
+                  <div class="card__img">
                     <img
-                      class="service-photo"
+                      class="card__service-photo"
                       src="./images/label.jpg"
                       alt="Бирка"
                       width="370"
                     />
-                    <div class="cart-overlay">
-                      <p class="cart-text">
+                    <div class="card__overlay">
+                      <p class="card__text">
                         Ресурс пропонує комплексні пропозиції з різним рівнем
                         функціоналу та сервісів. Все це дозволить відвідувачу
                         отримати вичерпні відомості про компанію чи приватну
@@ -325,31 +340,31 @@
                     </div>
                   </div>
 
-                  <ul class="cart-info list">
+                  <ul class="card__info list">
                     <li>
-                      <h2 class="list-title">
+                      <h2 class="card__title">
                         Проєкт <span lang="en">LAB</span>
                       </h2>
                     </li>
                     <li>
-                      <p class="work-types">Маркетинг</p>
+                      <p class="card__works">Маркетинг</p>
                     </li>
                   </ul>
                 </a>
               </div>
             </li>
-            <li class="service-item">
-              <div class="cart">
-                <a class="services" href="#">
-                  <div class="cart-img">
+            <li class="service-set__item">
+              <div class="card">
+                <a class="card__services" href="#">
+                  <div class="card__img">
                     <img
-                      class="service-photo"
+                      class="card__service-photo"
                       src="./images/notebook.jpg"
                       alt="Ноутбук"
                       width="370"
                     />
-                    <div class="cart-overlay">
-                      <p class="cart-text">
+                    <div class="card__overlay">
+                      <p class="card__text">
                         Ресурс пропонує комплексні пропозиції з різним рівнем
                         функціоналу та сервісів. Все це дозволить відвідувачу
                         отримати вичерпні відомості про компанію чи приватну
@@ -358,12 +373,12 @@
                     </div>
                   </div>
 
-                  <ul class="cart-info list">
+                  <ul class="card__info list">
                     <li class="info">
-                      <h2 class="list-title" lang="en">Growing Business</h2>
+                      <h2 class="card__title" lang="en">Growing Business</h2>
                     </li>
                     <li class="info">
-                      <p class="work-types">Додаток</p>
+                      <p class="card__works">Додаток</p>
                     </li>
                   </ul>
                 </a>
@@ -379,32 +394,32 @@
         <ul class="foot list">
           <li>
             <div>
-              <a lang="en" href="./index.html" class="logo second"
+              <a lang="en" href="./index.html" class="logo--inverse"
                 ><span class="logo">Web</span>Studio</a
               >
             </div>
 
             <address>
               <ul class="basement list">
-                <li class="item">
+                <li class="basement__item">
                   <a
-                    class="map link"
+                    class="basement__map"
                     href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
                     target="_blank"
                     rel="noopener noreferrer nofollow"
                     >м. Київ, пр-т Лесі Українки, 26</a
                   >
                 </li>
-                <li class="item">
+                <li class="basement__item">
                   <a
-                    class="contacts-basement link"
+                    class="basement__contacts"
                     lang="en"
                     href="mailto:info@devstudio.com"
                     >info@devstudio.com</a
                   >
                 </li>
                 <li>
-                  <a class="contacts-basement link" href="tel:+380961111111"
+                  <a class="basement__contacts" href="tel:+380961111111"
                     >+38 096 111 11 11</a
                   >
                 </li>
@@ -413,32 +428,32 @@
           </li>
           <li>
             <div class="footer-social">
-              <h3 class="title-social">Приєднуйтесь</h3>
+              <h3 class="footer-social__title">Приєднуйтесь</h3>
               <ul class="social list">
                 <li>
-                  <a class="foot social-link" href="">
-                    <svg class="icons-social">
+                  <a class="social-link social-link--foot" href="">
+                    <svg class="social-icons">
                       <use href="./images/icons.svg#icon-instagram"></use>
                     </svg>
                   </a>
                 </li>
                 <li>
-                  <a class="foot social-link" href="">
-                    <svg class="icons-social">
+                  <a class="social-link social-link--foot" href="">
+                    <svg class="social-icons">
                       <use href="./images/icons.svg#icon-twitter"></use>
                     </svg>
                   </a>
                 </li>
                 <li>
-                  <a class="foot social-link" href="">
-                    <svg class="icons-social">
+                  <a class="social-link social-link--foot" href="">
+                    <svg class="social-icons">
                       <use href="./images/icons.svg#icon-facebook"></use>
                     </svg>
                   </a>
                 </li>
                 <li>
-                  <a class="foot social-link" href="">
-                    <svg class="icons-social">
+                  <a class="social-link social-link--foot" href="">
+                    <svg class="social-icons">
                       <use href="./images/icons.svg#icon-linkedin"></use>
                     </svg>
                   </a>
@@ -446,21 +461,21 @@
               </ul>
             </div>
           </li>
-          <li class="footer-subscribe">
-            <h3 class="title-subscribe">Підпишіться на розсилку</h3>
-            <div class="foot subscribe">
+          <li class="subscribe">
+            <h3 class="subscribe__title">Підпишіться на розсилку</h3>
+            <div class="subscribe-foot">
               <form
                 name="signup_form"
                 autocomplete="on"
                 novalidate
-                class="form-subscribe"
+                class="subscribe-foot__form"
               >
                 <label for="user_email"></label>
                 <input
                   type="email"
                   name="email"
                   id="user_email"
-                  class="user_email"
+                  class="subscribe-foot__user_email"
                   placeholder="E-mail"
                 />
 
