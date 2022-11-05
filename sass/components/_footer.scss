@@ -1,0 +1,43 @@
+ .footer {
+     background-color: var(--footer-background-color);
+     padding: 60px 0;
+ }
+
+ .logo--inverse {
+     color: var(--primary-white-color);
+     display: block;
+ }
+
+ .footer__logo {
+     margin-bottom: 20px;
+ }
+
+ .basement {
+     font-style: normal;
+     font-size: 14px;
+     line-height: 1.71;
+     letter-spacing: 0.03em;
+     display: block;
+ }
+
+ .basement__map {
+     color: var(--primary-white-color);
+     text-decoration: none;
+ }
+
+ .basement__contacts {
+     color: var(--contacts-basement-color);
+     text-decoration: none;
+     transition-property: color;
+     transition-duration: 250ms;
+     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+ }
+
+ .basement__contacts {
+     margin-bottom: 9px;
+ }
+
+ .basement__contacts:last-child {
+     margin-bottom: 0px;
+ }
+ 
