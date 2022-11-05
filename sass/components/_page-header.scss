@@ -39,6 +39,11 @@
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+    color: var(--accent-color);
+}
 }
 
 .site-nav__link--current {
@@ -56,10 +61,7 @@
     border-radius: 2px;
 }
 
-.site-nav__link:hover,
-.site-nav__link:focus {
-    color: var(--accent-color);
-}
+
 
 /* contacts */
 .contacts {
@@ -83,27 +85,23 @@
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.contacts__link:hover,
-.contacts__link:focus {
+    &:hover,
+    &:focus {
     color: var(--accent-color);
 }
+}
+
+
 
 .contacts-basement.link:hover,
 .contacts-basement.link:focus {
     color: var(--accent-color);
 }
 
-.contacts__link:hover .contacts__icon-mail,
-.contacts__link:focus .contacts__icon-mail {
-    fill: var(--accent-color);
-}
 
-.contacts__link:hover .contacts__icon-smartphone,
-.contacts__link:focus .contacts__icon-smartphone {
-    fill: var(--accent-color);
-}
+
+
 
 .contacts__icon-mail {
     width: 16px;
@@ -111,6 +109,11 @@
     padding: 0;
     margin-right: 10px;
     fill: var(--secondary-text-color);
+
+    .contacts__link:hover &,
+    .contacts__link:focus & {
+    fill: var(--accent-color);
+}
 }
 
 .contacts__icon-smartphone {
@@ -118,6 +121,11 @@
     height: 16px;
     margin-right: 10px;
     fill: var(--secondary-text-color);
+
+    .contacts__link:hover &,
+    .contacts__link:focus & {
+    fill: var(--accent-color);
+}
 }
 
 .icon-cont {

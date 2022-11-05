@@ -17,6 +17,11 @@
        transition-property: border-color;
        transition-duration: 250ms;
        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+       &:hover,
+       &:focus {
+       border-color: var(--accent-color);
+   }
    }
 
 
@@ -27,14 +32,13 @@
        transition-property: color;
        transition-duration: 250ms;
        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-   }
 
-   .clients__link:hover,
-   .clients__link:focus {
-       border-color: var(--accent-color);
-   }
-
-   .clients__link:hover .clients__icon,
-   .clients__link:focus .clients__icon {
+       .clients__link:hover &,
+       .clients__link:focus & {
        color: var(--accent-color);
    }
+   }
+
+   
+
+   
