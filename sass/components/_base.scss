@@ -17,7 +17,14 @@ ul {
 .section {
     padding: 94px 0;
 }
-
+.section__title {
+    color: var(--primary-text-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    margin-bottom: 50px;
+}
 .container {
     width: 1200px;
     padding: 0 15px;
