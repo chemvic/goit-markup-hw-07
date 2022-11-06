@@ -4,7 +4,7 @@
     justify-content: center;
     gap: 10px;
     background-position: center;
-
+    @extend %list;
 }
 
 .social__link {

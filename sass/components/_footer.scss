@@ -18,6 +18,7 @@
      line-height: 1.71;
      letter-spacing: 0.03em;
      display: block;
+     @extend %list;
  }
 
  .basement__map {
@@ -56,6 +57,7 @@
  .foot {
      display: flex;
      align-items: baseline;
+     @extend %list;
  }
 
  .footer-social {

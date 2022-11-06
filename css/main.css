@@ -274,7 +274,7 @@ summary {
   --icons-color: #AFB1B8;
 }
 
-.list {
+.card__info, .service-set, .buttons, .clients, .social, .staff, .we-do, .benefits, .foot, .basement, .contacts, .site-nav {
   list-style: none;
 }
 

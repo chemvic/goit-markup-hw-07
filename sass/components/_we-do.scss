@@ -1,5 +1,6 @@
 .we-do {
     display: flex;
+    @extend %list;
 }
 
 .section__we-do {
