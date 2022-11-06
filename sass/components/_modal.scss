@@ -140,16 +140,14 @@
     &:focus {
     border-color: var(--accent-color);
 }
-}
-
-.modal__area::placeholder {
+    &::placeholder {
     font-family: 'Roboto';
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.01em;
     color: rgba(117, 117, 117, 0.5);
 }
-
+}
 
 
 .modal__agreement {

@@ -32,6 +32,11 @@
      transition-property: color;
      transition-duration: 250ms;
      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+     &:hover,
+     &:focus {
+            color: var(--accent-color);
+        }
  }
 
  .basement__contacts {
@@ -82,18 +87,19 @@
      border-radius: 4px;
      background-color: var(--footer-background-color);
      color: var(--primary-white-color);
+
+     &::placeholder {
+            color: rgba(255, 255, 255, 0.6);
+            font-family: 'Roboto';
+            font-size: 16px;
+            line-height: 1.25;
+    
+            display: flex;
+            align-items: center;
+            letter-spacing: 0.03em;
+        }
  }
 
- .subscribe-foot__input::placeholder {
-     color: rgba(255, 255, 255, 0.6);
-     font-family: 'Roboto';
-     font-size: 16px;
-     line-height: 1.25;
-
-     display: flex;
-     align-items: center;
-     letter-spacing: 0.03em;
- }
 
  .subscribe__title {
      font-family: 'Roboto';
